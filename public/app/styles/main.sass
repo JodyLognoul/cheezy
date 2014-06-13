@@ -1,4 +1,19 @@
 @import settings
 @import bootstrap
-@import bootstrap/theme
 
+body,html
+	height: 100%
+// Extends
+.eg-navbar
+	@extend .navbar
+	text-transform: uppercase
+	a,.dropdown
+		font-size: 12px
+.eg-jumbotron
+	@extend .jumbotron
+	height: 100%
+	background: #eee url('http://local.cheezy/app/images/elixir_kraked.jpg') no-repeat center center //fixed
+	background-size: cover
+	padding-top: 90px
+	h1
+		color: white
